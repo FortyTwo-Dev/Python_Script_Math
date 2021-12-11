@@ -62,20 +62,28 @@ def calcul():
             XY()
             calcul()
 
-
+            
+            
+def Vecteur():
+    if input("Validé-O- Recommencer-N- : ") == "O":
+        resultVX = (Xb - Xa)
+        resultVY = (Yb - Ya)
+        print("(",resultVX,")")
+        print("(",resultVY,")")
+        
+        
+        
 # fonction Menu qui sert à demander ce que l'on veux faire ( calcul de milieu, distance ou garder les mêmes valeurs) #
 def Menu():
-    i = False
     H = True
     S = 2
     while  H == True:
         if input("Milieu ~ Distance XY : ") == "XY": 
             XY()
             calcul()
-            i = True
-        elif i == True:
-            if input("garder les valeurs : ") == "O":
-                calcul()
+        elif input("Vecteur : ") == "V":
+            XY()
+            Vecteur()
         else:
             print("Fin Des Choix Attendre " , S, "Sec")
             time.sleep(S)
@@ -84,5 +92,5 @@ def Menu():
 Menu()
 
 
-# V1.1 #
+# V1.5 #
 # Attention Si il y a une erreur effacer le texte entre "# #" #

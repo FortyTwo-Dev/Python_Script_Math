@@ -25,7 +25,7 @@ def XY():
 # fonction qui sert à demander ce que l'on va faire des nombres (trouver le milieu de A et B, calculer la distance entre A et B) #
 # il suffit d'écrire la lettre entre "- -" qui est demandé et Si il n'est pas demander une lettre spécifique il faut mettre un O = (oui) #
 def calcul():
-    if input("Valider-O- Recommencer-N- : ") == "O":
+    if input("Validé-O- Recommencer-N- : ") == "O":
         if input("Milieu-M- : ") == "M":
             resultX = (Xa + Xb)/2
             print("X", resultX)
@@ -39,7 +39,6 @@ def calcul():
             resultXYd = math.sqrt((Xb - Xa)**2 + (Yb - Ya)**2)
             result_D = resultDX + resultDY
             print("Racine Carré De ", result_D)
-            # arr = arrondi
             print("Distance Arr = ", resultXYd)
         elif input("All M And D -MD- : ") == "MD":
             print("Milieu")
@@ -68,8 +67,15 @@ def Vecteur():
     if input("Validé-O- Recommencer-N- : ") == "O":
         resultVX = (Xb - Xa)
         resultVY = (Yb - Ya)
-        print("(",resultVX,")")
-        print("(",resultVY,")")
+        print("(", resultVX, ")")
+        print("(", resultVY, ")")
+        if input("Le Vecteur est t-il multiplier ? : ") == "O":
+            AU = float(input("rentrez une valeur : "))
+        else:
+            AU = 1
+        print("(", AU * resultVX, ")")
+        print("(", AU * resultVY, ")")
+
         
         
         
@@ -78,7 +84,7 @@ def Menu():
     H = True
     S = 2
     while  H == True:
-        if input("Milieu ~ Distance XY : ") == "XY": 
+        if input("Milieu ~ Distance XY : ") == "XY":
             XY()
             calcul()
         elif input("Vecteur : ") == "V":
@@ -92,5 +98,5 @@ def Menu():
 Menu()
 
 
-# V1.5 #
+# V2.0 #
 # Attention Si il y a une erreur effacer le texte entre "# #" #

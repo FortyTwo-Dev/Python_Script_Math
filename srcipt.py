@@ -145,7 +145,7 @@ def Menu():
             VDT()
         else:
             print("Fin Des Choix Attendre " , S, "Sec")
-            time.sleep(S
+            time.sleep(S)
 
 
 Menu()

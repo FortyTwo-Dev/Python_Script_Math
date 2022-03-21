@@ -61,7 +61,15 @@ def calcul():
             XY()
             calcul()
 
-                        
+
+# New #
+def FonctionAffine():
+    print("Sert a trouvé m")
+    if input("Validé-O- Recommencer-N- : ") == "O":
+        M_Affine = (Yb - Ya)/(Xb - Xa)
+        print(M_Affine)
+
+
             
 def Vecteur():
     if input("Validé-O- Recommencer-N- : ") == "O":
@@ -143,6 +151,9 @@ def Menu():
             Colinearite()
         elif input("Vitesse V=D/T : ") == "V":
             VDT()
+        elif input("F(affine) : ") == "F":
+            XY()
+            FonctionAffine()
         else:
             print("Fin Des Choix Attendre " , S, "Sec")
             time.sleep(S)
@@ -152,4 +163,10 @@ Menu()
 
 
 # V3.0 #
+# Milieu #
+# Distance #
+# Colinearite #
+# Vitesse V=D/T #
+# Vecteur #
+# F(Affine) : pour trouver "m" #
 # Attention Si il y a une erreur effacer le texte entre "# #" #

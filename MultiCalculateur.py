@@ -20,8 +20,13 @@ def XY():
     print(B)
     print("A", A , ", " , "B",B)
 
-
-
+    
+def ABC():
+    global a, b, c
+    a = float(input("rentrer la valeur A : "))
+    b = float(input("rentrer la valeur B : "))
+    c = float(input("rentrer la valeur C : "))
+    print(f"\nA : {a},\nB : {b},\nC : {c}")
 # fonction qui sert à demander ce que l'on va faire des nombres (trouver le milieu de A et B, calculer la distance entre A et B) #
 # il suffit d'écrire la lettre entre "- -" qui est demandé et Si il n'est pas demander une lettre spécifique il faut mettre un O = (oui) #
 def calcul():
@@ -135,6 +140,12 @@ def VDT():
             print(CV, "M/s")  
         
         
+def Canonique():
+    alpha = -b/(2*a)
+    beta = -((b**2)-4*a*c)/4*a
+    print("alpha = ", alpha)
+    print("beta = ", beta)    
+    
 # fonction Menu qui sert à demander ce que l'on veux faire ( calcul de milieu, distance ou garder les mêmes valeurs) #
 def Menu():
     H = True

@@ -165,6 +165,9 @@ def Menu():
         elif input("F(affine) : ") == "F":
             XY()
             FonctionAffine()
+        elif input("Canonique : ") == "C":
+            ABC()
+            Canonique()
         else:
             print("Fin Des Choix Attendre " , S, "Sec")
             time.sleep(S)

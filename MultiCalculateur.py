@@ -26,7 +26,7 @@ def ABC():
     a = float(input("rentrer la valeur A : "))
     b = float(input("rentrer la valeur B : "))
     c = float(input("rentrer la valeur C : "))
-    print(f"\nA : {a},\nB : {b},\nC : {c}")
+    print("\nA : ",a,"\nB : ",b,"\nC : ",c)
 # fonction qui sert à demander ce que l'on va faire des nombres (trouver le milieu de A et B, calculer la distance entre A et B) #
 # il suffit d'écrire la lettre entre "- -" qui est demandé et Si il n'est pas demander une lettre spécifique il faut mettre un O = (oui) #
 def calcul():

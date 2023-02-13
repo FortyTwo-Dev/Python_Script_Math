@@ -146,6 +146,29 @@ def Canonique():
     print("alpha = ", alpha)
     print("beta = ", beta)    
     
+    
+def TauxVariation():
+    print("F(a + h) - f(a)\n\th")
+
+def Deriver():
+    print("lim F(a + h) - f(a)\n\th->\th")
+
+def FAffine():
+    print("f'(x) = a")
+
+def FPuissance():
+    print("f'(x)=nx**n-1")
+
+def FInverse():
+    print("-1/x**2")
+
+def FRacine():
+    print("1/2sqrt(x)")
+
+def FCompose():
+    print("ag'(ax+b)")
+    
+    
 # fonction Menu qui sert à demander ce que l'on veux faire ( calcul de milieu, distance ou garder les mêmes valeurs) #
 def Menu():
     H = True

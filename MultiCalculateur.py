@@ -207,3 +207,16 @@ Menu()
 # Vecteur #
 # F(Affine) : pour trouver "m" #
 # Attention Si il y a une erreur effacer le texte entre "# #" #
+#
+# F⃗ =−F(sinαx⃗ +cosαy⃗ )
+#
+#MA(F⃗ )−→−−−−−=−b⋅Fcosαz⃗ 
+#MB(F⃗ )−→−−−−−=F(−csinα−bcosα)z⃗ 
+#MC(F⃗ )−→−−−−−=F(−csinα−(a+b)cosα)z⃗ 
+#MD(F⃗ )−→−−−−−=F(hsinα−(a+b)cosα)z⃗ 
+#D sur la droite support de F⃗  ⇒ MD(F⃗ )−→−−−−−=0⃗ 
+#hsinα−(a+b)cosα=0
+#sinαcosα=a+bh
+#α=tan−1a+bh
+#α=tan−1200+55305=40°
+#
